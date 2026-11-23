@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aster School of Technology — Software, AI &amp; Data Programs in Bengaluru</title>
+  <meta name="description" content="Aster is a Bengaluru school of technology offering mentor-led programs in Software Engineering, AI & Machine Learning, Data Analytics, Product Design, Cybersecurity and Cloud." />
+  <meta name="theme-color" content="#0B1D18" />
+  <meta property="og:title" content="Aster School of Technology" />
+  <meta property="og:description" content="Craft a career in technology — studio-style programs, mentor reviews and placement support." />
+  <meta property="og:image" content="/assets/img/hero.jpg" />
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,500&family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="image" href="/assets/img/hero.jpg" />
+  <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body class="is-loading">
+
+  <!-- ===== LOADER: ring + counter, exits as a closing circle ===== -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__ring">
+      <svg viewBox="0 0 200 200"><circle class="loader__track" cx="100" cy="100" r="90" /><circle class="loader__arc" id="loaderArc" cx="100" cy="100" r="90" /></svg>
+      <div class="loader__center">
+        <span class="loader__star">✳</span>
+        <span class="loader__num"><span id="loaderNum">0</span><sup>%</sup></span>
+      </div>
+    </div>
+    <p class="loader__words"><span>Learn</span><span>Build</span><span>Lead</span></p>
+    <p class="loader__brand">Aster School of Technology · Bengaluru</p>
+  </div>
+
+  <!-- cursor-follow preview for program list -->
+  <div class="hover-preview" id="hoverPreview" aria-hidden="true"><img alt="" /></div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <nav class="header__left" aria-label="Primary">
+      <a href="#programs">Programs</a>
+      <a href="#method">Method</a>
+      <a href="#campus">Campus</a>
+      <a href="#admissions">Admissions</a>
+    </nav>
+    <a href="#top" class="brand" aria-label="Aster home">
+      <span class="brand__mark">✳</span>
+      <span class="brand__name">Aster</span>
+    </a>
+    <div class="header__right">
+      <a href="tel:+918000000000" class="header__phone">+91 80000 00000</a>
+      <a href="#apply" class="btn btn--gold btn--sm">Apply now</a>
+      <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="drawer" id="drawer">
+    <a href="#programs">Programs</a>
+    <a href="#method">Method</a>
+    <a href="#campus">Campus</a>
+    <a href="#admissions">Admissions</a>
+    <a href="#faq">FAQ</a>
+    <a href="#apply" class="btn btn--gold">Apply for 2027 intake</a>
+  </div>
+
+  <main id="top">
+
+    <!-- ===== HERO ===== -->
+    <section class="hero">
+      <div class="hero__inner wrap">
+        <p class="kicker reveal-fade">Admissions open · January 2027 intake</p>
+        <h1 class="hero__title lines">
+          <span class="line">Craft a career</span>
+          <span class="line">in <em>technology,</em></span>
+          <span class="line">not just a résumé.</span>
+        </h1>
+        <div class="hero__row">
+          <p class="hero__lead reveal-fade">A Bengaluru school for software, AI and data — taught studio-style by working engineers, with a portfolio you can defend in any interview.</p>
+          <div class="hero__ctas reveal-fade">
+            <a href="#apply" class="btn btn--gold btn--lg">Book a campus visit</a>
+            <a href="#programs" class="btn btn--line btn--lg">View programs <span aria-hidden="true">↘</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__media wrap">
+        <figure class="arch arch--hero mask-up">
+          <img src="/assets/img/hero.jpg" alt="Two learners reviewing code on a laptop" width="1600" height="1068" />
+        </figure>
+        <figure class="hero__film mask-up">
+          <video autoplay muted loop playsinline preload="metadata" poster="/assets/img/campus-6.jpg" aria-label="Short film of learners coding at Aster">
+            <source src="/assets/video/aster-film.webm" type="video/webm" />
+            <source src="/assets/video/aster-film.mp4" type="video/mp4" />
+          </video>
+          <figcaption><span class="dot"></span> Inside the studio</figcaption>
+        </figure>
+        <div class="hero__badge reveal-fade" aria-hidden="true">
+          <svg viewBox="0 0 120 120"><defs><path id="circ" d="M60,60 m-46,0 a46,46 0 1,1 92,0 a46,46 0 1,1 -92,0" /></defs><text><textPath href="#circ" textLength="286">MENTOR-LED · PROJECT-FIRST · CAREER-READY ·</textPath></text></svg>
+          <span>✳</span>
+        </div>
+      </div>
+
+      <div class="hero__stats wrap">
+        <div class="hstat reveal-fade"><span class="roll" data-roll="1850">0</span><small>alumni across 31 cohorts</small></div>
+        <div class="hstat reveal-fade"><span class="roll" data-roll="91" data-suffix="%">0</span><small>placed within six months*</small></div>
+        <div class="hstat reveal-fade"><span class="roll" data-roll="24">0</span><small>learners per studio, max</small></div>
+        <div class="hstat reveal-fade"><span class="roll" data-roll="9" data-suffix=" yrs">0</span><small>average mentor experience</small></div>
+      </div>
+    </section>
+
+    <!-- ===== MANIFESTO (scroll-filled words) ===== -->
+    <section class="manifesto">
+      <div class="wrap">
+        <p class="kicker kicker--dim">Why Aster</p>
+        <p class="manifesto__text" id="manifesto">We believe great engineers are made in the room where the work happens. So every week at Aster you design, ship and defend real software — reviewed line by line by people who build it for a living — until competence becomes confidence.</p>
+      </div>
+    </section>
+
+    <!-- ===== PROGRAMS: hover list ===== -->
+    <section class="programs" id="programs">
+      <div class="wrap">
+        <div class="head">
+          <p class="kicker kicker--dim">Schools &amp; programs</p>
+          <h2 class="lines"><span class="line">Six schools.</span> <span class="line"><em>One standard</em> of craft.</span></h2>
+        </div>
+        <ul class="plist" id="plist">
+          <li class="prow" data-img="/assets/img/prog-se.jpg">
+            <span class="prow__num">01</span>
+            <span class="prow__name">Software Engineering</span>
+            <span class="prow__meta">26 weeks · Hybrid</span>
+            <span class="prow__arrow">→</span>
+            <div class="prow__detail"><img src="/assets/img/prog-se.jpg" alt="Developers coding at workstations" loading="lazy" /><p>Full-stack JavaScript, TypeScript, React, Node, PostgreSQL, system design and DevOps fundamentals. Capstone shipped to real users.</p></div>
+          </li>
+          <li class="prow" data-img="/assets/img/prog-ai.jpg">
+            <span class="prow__num">02</span>
+            <span class="prow__name">AI &amp; Machine Learning</span>
+            <span class="prow__meta">24 weeks · Live online</span>
+            <span class="prow__arrow">→</span>
+            <div class="prow__detail"><img src="/assets/img/prog-ai.jpg" alt="Student-built robot with a camera module" loading="lazy" /><p>Python, statistics, deep learning, computer vision and LLM applications — from notebooks to deployed models.</p></div>
+          </li>
+          <li class="prow" data-img="/assets/img/prog-data.jpg">
+            <span class="prow__num">03</span>
+            <span class="prow__name">Data Analytics</span>
+            <span class="prow__meta">16 weeks · Weekend</span>
+            <span class="prow__arrow">→</span>
+            <div class="prow__detail"><img src="/assets/img/prog-data.jpg" alt="Learners working in a computer lab" loading="lazy" /><p>SQL, Excel, Python and Power BI on real business datasets, ending in a stakeholder-ready dashboard portfolio.</p></div>
+          </li>
+          <li class="prow" data-img="/assets/img/prog-design.jpg">
+            <span class="prow__num">04</span>
+            <span class="prow__name">Product Design</span>
+            <span class="prow__meta">18 weeks · Hybrid</span>
+            <span class="prow__arrow">→</span>
+            <div class="prow__detail"><img src="/assets/img/prog-design.jpg" alt="Two learners researching at a library table" loading="lazy" /><p>User research, interaction design, Figma systems and three case studies built with real product teams.</p></div>
+          </li>
+          <li class="prow" data-img="/assets/img/prog-cyber.jpg">
+            <span class="prow__num">05</span>
+            <span class="prow__name">Cybersecurity</span>
+            <span class="prow__meta">20 weeks · Classroom</span>
+            <span class="prow__arrow">→</span>
+            <div class="prow__detail"><img src="/assets/img/prog-cyber.jpg" alt="Backlit keyboard in a dark room" loading="lazy" /><p>Networks, Linux, ethical hacking labs, SOC operations and cloud security, preparing for industry certifications.</p></div>
+          </li>
+          <li class="prow" data-img="/assets/img/prog-cloud.jpg">
+            <span class="prow__num">06</span>
+            <span class="prow__name">Cloud &amp; Platform</span>
+            <span class="prow__meta">18 weeks · Live online</span>
+            <span class="prow__arrow">→</span>
+            <div class="prow__detail"><img src="/assets/img/prog-cloud.jpg" alt="Bengaluru tech park at night" loading="lazy" /><p>AWS, containers, Kubernetes, CI/CD and infrastructure as code, taught on production-style environments.</p></div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== FILM ===== -->
+    <section class="film" id="film">
+      <div class="film__frame" id="filmFrame">
+        <video muted loop playsinline preload="none" poster="/assets/img/method-1.jpg" data-lazy aria-label="A day inside the Aster studio">
+          <source data-src="/assets/video/aster-film.webm" type="video/webm" />
+          <source data-src="/assets/video/aster-film.mp4" type="video/mp4" />
+        </video>
+        <div class="film__caption">
+          <p class="kicker">A day at Aster</p>
+          <h2 class="lines"><span class="line">Mornings in theory.</span> <span class="line"><em>Afternoons in the code.</em></span></h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== METHOD: stacked sticky cards ===== -->
+    <section class="method" id="method">
+      <div class="wrap method__grid">
+        <div class="method__intro">
+          <p class="kicker kicker--dim">The Aster method</p>
+          <h2 class="lines"><span class="line">Four movements,</span> <span class="line">repeated until</span> <span class="line"><em>mastery.</em></span></h2>
+          <p class="method__note">Every module follows the same rhythm, so you always know what's expected — and what good looks like.</p>
+        </div>
+        <div class="stack">
+          <article class="scard" style="--i:0">
+            <div class="scard__text"><span class="scard__num">I.</span><h3>Learn from practitioners</h3><p>Concept sessions led by engineers who use these tools every day — recorded, annotated and searchable.</p></div>
+            <div class="scard__img"><img src="/assets/img/method-1.jpg" alt="Mentor guiding a learner at a workstation" loading="lazy" /></div>
+          </article>
+          <article class="scard" style="--i:1">
+            <div class="scard__text"><span class="scard__num">II.</span><h3>Build in studios</h3><p>Small studios of 24 work on weekly briefs in pairs and squads, the way real product teams operate.</p></div>
+            <div class="scard__img"><img src="/assets/img/method-2.jpg" alt="Learners collaborating around a table at a hackathon" loading="lazy" /></div>
+          </article>
+          <article class="scard" style="--i:2">
+            <div class="scard__text"><span class="scard__num">III.</span><h3>Defend your work</h3><p>Critiques and code reviews every Friday. You explain your decisions — and learn to take feedback well.</p></div>
+            <div class="scard__img"><img src="/assets/img/method-3.jpg" alt="Students building and testing a robot" loading="lazy" /></div>
+          </article>
+          <article class="scard" style="--i:3">
+            <div class="scard__text"><span class="scard__num">IV.</span><h3>Graduate into roles</h3><p>Demo day with hiring partners, interview coaching and referrals until you sign an offer.</p></div>
+            <div class="scard__img"><img src="/assets/img/method-4.jpg" alt="Graduates celebrating at a convocation" loading="lazy" /></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CAMPUS (cream band, image marquee) ===== -->
+    <section class="campus" id="campus">
+      <div class="wrap campus__head">
+        <div>
+          <p class="kicker kicker--ink">The campus</p>
+          <h2 class="lines"><span class="line">In the middle of</span> <span class="line"><em>India's tech capital.</em></span></h2>
+        </div>
+        <p class="campus__aside">Our Whitefield studio sits minutes from the companies our graduates join — so guest engineers drop in, and field visits are a metro ride away.</p>
+      </div>
+      <div class="reel" aria-label="Campus photographs">
+        <div class="reel__track">
+          <figure><img src="/assets/img/campus-1.jpg" alt="Office towers in Whitefield, Bengaluru" loading="lazy" /><figcaption>Whitefield</figcaption></figure>
+          <figure class="tall"><img src="/assets/img/campus-5.jpg" alt="Woman technologist holding a tablet" loading="lazy" /><figcaption>Women in Tech circle</figcaption></figure>
+          <figure><img src="/assets/img/campus-3.jpg" alt="Large hackathon room full of learners" loading="lazy" /><figcaption>Quarterly hack week</figcaption></figure>
+          <figure class="tall"><img src="/assets/img/campus-4.jpg" alt="Two engineers pair programming" loading="lazy" /><figcaption>Pair programming</figcaption></figure>
+          <figure><img src="/assets/img/campus-2.jpg" alt="Tech park buildings on a Bengaluru road" loading="lazy" /><figcaption>Industry visits</figcaption></figure>
+          <figure class="tall"><img src="/assets/img/campus-6.jpg" alt="Hand typing on a laptop keyboard" loading="lazy" /><figcaption>Open studio, 8am–10pm</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FACULTY ===== -->
+    <section class="faculty">
+      <div class="wrap">
+        <div class="head head--split">
+          <div>
+            <p class="kicker kicker--dim">Faculty</p>
+            <h2 class="lines"><span class="line">Mentors who still</span> <span class="line"><em>ship on Mondays.</em></span></h2>
+          </div>
+          <p class="head__aside">Our faculty split their week between product teams and the studio, so what you learn is what the industry uses right now.</p>
+        </div>
+        <div class="fgrid">
+          <article class="fcard reveal-rise"><div class="fcard__mono">VI</div><h3>Vikram I.</h3><p>Head of Software Engineering</p><span>11 yrs · distributed systems</span></article>
+          <article class="fcard reveal-rise"><div class="fcard__mono">MS</div><h3>Meera S.</h3><p>Lead, AI &amp; Machine Learning</p><span>8 yrs · computer vision</span></article>
+          <article class="fcard reveal-rise"><div class="fcard__mono">AR</div><h3>Arjun R.</h3><p>Lead, Cloud &amp; Platform</p><span>10 yrs · SRE &amp; DevOps</span></article>
+          <article class="fcard reveal-rise"><div class="fcard__mono">TK</div><h3>Tara K.</h3><p>Lead, Product Design</p><span>7 yrs · fintech &amp; consumer</span></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ADMISSIONS TIMELINE ===== -->
+    <section class="admissions" id="admissions">
+      <div class="wrap adm__grid">
+        <div class="adm__intro">
+          <p class="kicker kicker--dim">Admissions</p>
+          <h2 class="lines"><span class="line">From enquiry</span> <span class="line">to <em>day one</em></span> <span class="line">in four weeks.</span></h2>
+          <div class="fees">
+            <div><small>Program fee</small><strong>₹1,40,000</strong></div>
+            <div><small>Zero-cost EMI from</small><strong>₹11,700/mo</strong></div>
+            <div><small>Merit scholarships</small><strong>up to 40%</strong></div>
+          </div>
+        </div>
+        <ol class="timeline" id="timeline">
+          <span class="timeline__line"><span id="timelineFill"></span></span>
+          <li><span class="tl__dot"></span><h3>Campus visit or online info session</h3><p>Meet faculty, see the studio and get your questions answered.</p></li>
+          <li><span class="tl__dot"></span><h3>Aptitude conversation</h3><p>A 30-minute chat — logic, motivation and goals. No coding experience needed.</p></li>
+          <li><span class="tl__dot"></span><h3>Offer &amp; scholarship decision</h3><p>Within 72 hours, with a personalised learning plan.</p></li>
+          <li><span class="tl__dot"></span><h3>Pre-work &amp; orientation</h3><p>Two weeks of guided pre-work so you start the cohort at full speed.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== FAQ ===== -->
+    <section class="faq" id="faq">
+      <div class="wrap">
+        <div class="head">
+          <p class="kicker kicker--dim">Questions</p>
+          <h2 class="lines"><span class="line">Frequently <em>asked.</em></span></h2>
+        </div>
+        <div class="faq__cols">
+          <details class="q reveal-rise"><summary>Do I need prior coding experience?</summary><p>No. Programs start from fundamentals and the aptitude conversation helps us place you on the right track and pace.</p></details>
+          <details class="q reveal-rise"><summary>Can working professionals join?</summary><p>Yes — weekend and evening studios are designed for people with full-time jobs.</p></details>
+          <details class="q reveal-rise"><summary>Is placement guaranteed?</summary><p>We don't promise guarantees. We provide unlimited interview preparation and referrals to hiring partners until you're placed, subject to program completion.</p></details>
+          <details class="q reveal-rise"><summary>What does a typical week look like?</summary><p>Around 20 hours: concept sessions, studio build time, one critique and one 1:1 mentor check-in.</p></details>
+          <details class="q reveal-rise"><summary>Are scholarships available?</summary><p>Merit and need-based scholarships of up to 40% are awarded after the aptitude conversation.</p></details>
+          <details class="q reveal-rise"><summary>Do I get a certificate?</summary><p>Yes, plus a verified project portfolio and a mentor recommendation letter on completion.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== APPLY ===== -->
+    <section class="apply" id="apply">
+      <div class="wrap apply__grid">
+        <figure class="arch arch--apply mask-up"><img src="/assets/img/apply.jpg" alt="Smiling student holding a laptop in a library" loading="lazy" /></figure>
+        <div class="apply__body">
+          <p class="kicker">Apply · January 2027</p>
+          <h2 class="lines"><span class="line">Begin with a</span> <span class="line"><em>conversation.</em></span></h2>
+          <p class="apply__lead">Tell us a little about yourself. An admissions counsellor will call within one working day to schedule your campus visit.</p>
+          <form class="aform" id="applyForm" novalidate>
+            <div class="afield"><input id="aName" name="name" type="text" placeholder=" " required autocomplete="name" /><label for="aName">Full name</label></div>
+            <div class="afield"><input id="aPhone" name="phone" type="tel" placeholder=" " required inputmode="numeric" autocomplete="tel" /><label for="aPhone">Mobile number</label></div>
+            <div class="afield afield--full"><input id="aEmail" name="email" type="email" placeholder=" " autocomplete="email" /><label for="aEmail">Email (optional)</label></div>
+            <div class="afield afield--full">
+              <select id="aProg" name="program" required>
+                <option value="" selected disabled>Program of interest</option>
+                <option>Software Engineering</option><option>AI &amp; Machine Learning</option><option>Data Analytics</option><option>Product Design</option><option>Cybersecurity</option><option>Cloud &amp; Platform</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn--gold btn--lg afield--full">Request a callback</button>
+            <p class="aform__msg afield--full" id="applyMsg" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="wrap footer__top">
+      <p class="footer__big lines"><span class="line">Craft what's</span> <span class="line"><em>next.</em></span></p>
+      <a href="#apply" class="btn btn--ink btn--lg">Apply now</a>
+    </div>
+    <div class="wrap footer__grid">
+      <div><span class="brand brand--ink"><span class="brand__mark">✳</span><span class="brand__name">Aster</span></span><p>School of Technology, Bengaluru.</p></div>
+      <div><h4>Programs</h4><a href="#programs">Software Engineering</a><a href="#programs">AI &amp; ML</a><a href="#programs">Data Analytics</a><a href="#programs">Product Design</a></div>
+      <div><h4>School</h4><a href="#method">Method</a><a href="#campus">Campus</a><a href="#admissions">Admissions</a><a href="#faq">FAQ</a></div>
+      <div><h4>Visit</h4><p>3rd Floor, ITPL Main Road,<br />Whitefield, Bengaluru 560066</p><a href="tel:+918000000000">+91 80000 00000</a><a href="mailto:admissions@aster.school">admissions@aster.school</a></div>
+    </div>
+    <div class="wrap footer__base"><span>© <span id="year"></span> Aster School of Technology</span><span>*Indicative outcome figures. · <a href="/CREDITS.md">Photo credits</a></span></div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js" defer></script>
+  <script src="/js/main.js" defer></script>
+</body>
+</html>
